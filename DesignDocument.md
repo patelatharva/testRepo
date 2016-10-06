@@ -1,7 +1,7 @@
 # Design Document
 
-**Author**: Team95
-**Version**: 0.1.0
+**Author**: Team95  
+**Version**: 1.0.0  
 
 ## 1 Design Considerations
 
@@ -28,7 +28,7 @@ We have made some assumptions about the system environment based on the requirem
 In this application, we are following [Model View Presenter](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93presenter "MVP explained on Wikipedia") pattern with [Clean Architecture](https://8thlight.com/blog/uncle-bob/2012/08/13/the-clean-architecture.html "Original article explaining Clean Architecture") style for design of the system. The MVP pattern is suitable for creating User Interface of application and the Clean Architecture approach emphasizes on separation of concerns between different layers of the application and mandates a direction of dependencies between components from different layers of the system for ease of maintainability and testability of the system. Clean Architecture style led us to add a layer called Domain in middle of two layers namely Data layer and Presentation layer. Domain layer takes care of implementing the use cases served by the application. We have described the architecture thorugh component digaram in following section. 
 
 ### 2.1 Component Diagram
-![](ComponentDiagramForGLM.png)
+![](diagrams/ComponentDiagramForGLM.png)
 The components of the system are organized in three logical layers namely: Data layer, Domain layer and Presentation layer. All the methods implementing the database queries will be present in the repository components in Data layer. The logic of the use cases of the application will be implemented by the components included the Domain layer. The User Interface of the application will be managed by activity components shown in the Presentation layer. The annotated connections between the components show the interfaces provided and required by the corresponding components.
 
 ### 2.2 Deployment Diagram
