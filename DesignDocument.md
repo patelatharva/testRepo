@@ -29,7 +29,7 @@ In this application, we are following [Model View Presenter](https://en.wikipedi
 
 ### 2.1 Component Diagram
 ![](diagrams/ComponentDiagramForGLM.png)
-The components of the system are organized in three logical layers namely: Data layer, Domain layer and Presentation layer. All the methods implementing the database queries will be present in the repository components in Data layer. The logic of the use cases of the application will be implemented by the components included the Domain layer. The User Interface of the application will be managed by activity components shown in the Presentation layer. The annotated connections between the components show the interfaces provided and required by the corresponding components.
+The components of the system are organized in three logical layers namely: Data layer, Domain layer and Presentation layer. All the methods implementing the database queries will be present in the repository components in Data layer. The logic of the use cases of the application will be implemented by the components included the Domain layer. The Data layer and Domain layer combined can be seen as a _Model_ part of the Model View Presenter pattern. The User Interface of the application will be managed by activity components shown in the Presentation layer. The Presentation layer will contain the _View_ and _Presenter_ parts of the Model View Presenter pattern. The annotated connections between the components show the interfaces provided and required by the corresponding components.
 
 ### 2.2 Deployment Diagram
 
@@ -41,7 +41,7 @@ Associations and functionalities of classes present in the Domain layer of the s
 
 ### 3.1 Class Diagram
 
-![](design-team.png)
+![](diagrams/design-team.png)
 The above class diagram represents the classes present in the Domain layer of the system. Domain layer implements all the use cases of the application. The connections among the classes represent the associations among them based on the requirements of the app.
 
 ## 4 User Interface Design
