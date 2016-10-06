@@ -1,6 +1,7 @@
 # Design Document
 
 **Author**: Team95
+**Version**: 0.1.0
 
 ## 1 Design Considerations
 
@@ -32,20 +33,53 @@ The components of the system are organized in three logical layers namely: Data 
 
 ### 2.2 Deployment Diagram
 
-For this application, we are going to deploy the all the components of the system on single device (like smartphone or tablet). The system doesn't rely on remote server for any of its functionalities. Therefore we have chosen not to create a deployment diagram for this system.
+For this application, we are going to deploy all the components of the system on single mobile device like smartphone or tablet. The system doesn't rely on remote server for any of its functionalities. Therefore we have chosen not to create a deployment diagram for this system.
 
 ## 3 Low-Level Design
 
-*Describe the low-level design for each of the system components identified in the previous section. For each component, you should provide details in the following UML diagrams to show its internal structure.*
+Associations and functionalities of classes present in the Domain layer of the system architecture is shown as class diagram in the following subsection. 
 
 ### 3.1 Class Diagram
 
-*In the case of an OO design, the internal structure of a software component would typically be expressed as a UML class diagram that represents the static class structure for the component and their relationships.*
-
-### 3.2 Other Diagrams
-
-*<u>Optionally</u>, you can decide to describe some dynamic aspects of your system using one or more behavioral diagrams, such as sequence and state diagrams.*
+![](design-team.png)
+The above class diagram represents the classes present in the Domain layer of the system. Domain layer implements all the use cases of the application. The connections among the classes represent the associations among them based on the requirements of the app.
 
 ## 4 User Interface Design
-*For GUI-based systems, this section should provide the specific format/layout of the user interface of the system (e.g., in the form of graphical mockups).*
+Here are some UI mock-ups that give an idea about how the actual app will look like.  
 
+### View All Grocery Lists
+![](UIMocks/1-0_ViewAllGroceryLists.png)
+
+> The user can click on the name of any list to view the items added to that list.  
+> Clicking on the round button with plus icon in the bottom right corner will create new list with name "My Grocery list"  
+> Clicking on the garbage bin icon will delete the list  
+
+### View and Manage Items in a Grocery List
+![](UIMocks/2-0_Viewgrocerylist.png)
+> The list of items added to a particular list are shown arranged by the type of the items.   
+> The user can click on the checkbox to mark the item as bought and it will cross out the name of item in the list without removing it.  
+> Clicking on the quantity of the item will allow to set the quantity.  
+> Clicking on garbage bin button will remove the item from the list.  
+> Clicking on the rounded button with plus icon in the bottom right corner will launch new screen (activity) for picking an item to be added to this list.    
+> Clicking on the checkbox with label "Check-off all items in list" will check-off all the items in the list at once  
+> Clicking the pencil icon near the name of the list on the top will allow to change the name of the list  
+
+### Pick an item to be added to list
+![](UIMocks/3-0_Pickanitem.png)
+
+> This view shows the hierarchical list of items categorized by their types.  
+> Using the search box at the top, user can search for an item by its name.     
+
+### Search for items  
+![](UIMocks/4-0_Searchforitems.png)
+
+> The app will show the list of items when adding the name of item in the search box.  
+> If some item desired by user is not present in the search results, the user can add that new item to the database by clicking on '+ Add _item name_ as new item' button. This will launch a new activity screen for adding a new item of specific type.    
+
+### Add a new item of specific type to database
+![](UIMocks/5-0_Addnewitem.png)
+
+> The user enters name of new item in the editable text box.  
+> The type of the item can be chosen from the drop down list.    
+> The unit of quantity can be chosen from the drop down list.  
+> Clicking on the add button will add this new item to the app's database. The newly added item will be then visible in the search list and in the hierarchical under type specified while adding that item.  
