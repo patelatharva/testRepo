@@ -52,8 +52,8 @@ The process to be followed to build this system is Rational Unified Process(RUP)
 5. *Developer:* Responsible for developing and testing components, in accordance with the project’s adopted standards.  
 6. *Integrator:* Integrators combine each developers components to produce a build. Also maintains builds for different environments such as system, staging and production.  
 7. *Quality Assurance Analyst:* Makes sure that all the artifacts of the project including software functionality, code and supporting documents are meeting the quality expectations of the clients.  
-Name | Role  
---- | ---  
-Adelene Sim | System Analyst, Test Analyst, Developer  
-Atharva Patel | Project Manager, Software Architect, Developer, Integrator  
-Lalanthi Perera | Quality Assurance Analyst, Developer  
+Name | Role 
+--- | --- 
+Adelene Sim | System Analyst, Test Analyst, Developer 
+Atharva Patel | Project Manager, Software Architect, Developer, Integrator 
+Lalanthi Perera | Quality Assurance Analyst, Developer 
